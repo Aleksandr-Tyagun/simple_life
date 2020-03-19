@@ -1,0 +1,51 @@
+.header {
+  min-height: 256px;
+  background-color: $color-grey-light;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    @include container;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+
+  &__title {
+    width: 325px;
+    color: $color-purple;
+    font-family: Lora, serif;
+    font-size: 33px;
+    line-height: 44px;
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    color: $color-blue;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 480px) {
+      font-size: 7px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
